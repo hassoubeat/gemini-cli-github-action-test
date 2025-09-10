@@ -1,0 +1,1 @@
+gemini-cli-github-actionsのテスト用リポジトリ

@@ -56,7 +56,7 @@ function testArithmetic() {
     console.log(`5 + 3 = ${add(5, 3)}`);
     
     // 減算テスト
-    console.log(`10 - 4 = ${subtract(10, 4)}`);
+    console.log(`10 - 4 = ${subtract(10, 5)}`);
     
     // 乗算テスト
     console.log(`6 * 7 = ${multiply(6, 7)}`);

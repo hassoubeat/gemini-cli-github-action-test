@@ -50,7 +50,10 @@ jobs:
           ISSUE_BODY: '${{ github.event.pull_request.body || github.event.issue.body }}'
           PULL_REQUEST_NUMBER: '${{ github.event.pull_request.number || github.event.issue.number }}'
           REPOSITORY: '${{ github.repository }}'
-          ADDITIONAL_CONTEXT: '${{ inputs.additional_context }}'
+          ADDITIONAL_CONTEXT: |
+            【重要な言語指示】すべてのレビューコメント、フィードバック、サマリーは必ず日本語で記述してください。コード提案内のコード以外は、すべて日本語を使用すること。英語での出力は禁止です。
+            
+            ${{ inputs.additional_context }}
         with:
           gcp_location: '${{ vars.GOOGLE_CLOUD_LOCATION }}'
           gcp_project_id: '${{ vars.GOOGLE_CLOUD_PROJECT }}'
